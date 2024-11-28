@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+
+                <div class="card">
+                    <div class="card-header">
+                        Menu
+                    </div>
+
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="" class="list-group-item">Daftar Bayi</a>
+                            <a href="" class="list-group-item">Tambah Rekap</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="card">
+                    <div class="card-header">
+                        Tambah rekap
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="textNama"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Berat Badan</label>
+                            <input type="number" class="form-control" id="textBb"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tinggi Badan</label>
+                            <input type="number" class="form-control" id="textTb"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Lingkar Kepala</label>
+                            <input type="number" class="form-control" id="textLk"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Bulan</label>
+                            <select class="form-control" id="textBulan">
+                            <option value="">Pilih Bulan</option>
+                            <option value="Januari">Januari</option>
+                            <option value="Februari">Februari</option>
+                            <option value="Maret">Maret</option>
+                            <option value="April">April</option>
+                            <option value="Mei">Mei</option>
+                            <option value="Juni">Juni</option>
+                            <option value="July">July</option>
+                            <option value="Agustus">Agustus</option>
+                            <option value="September">September</option>
+                            <option value="Oktober">Oktober</option>
+                            <option value="November">November</option>
+                            <option value="Desember">Desember</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" onclick="tambahRekap()">Simpan</button>
+                        <button class="btn btn-warning" onclick="batalEdit()">Cancel</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped" id="tblRekap">
+                        <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>Nama</th>
+                              <th>Berat Badan</th>
+                              <th>Tinggi Badan</th>
+                              <th>Lingkar Kepala</th>
+                              <th>Bulan</th>
+                              
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              
+                            </tr>
+                          </tbody>
+                          
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    
+</body>
+<script src="Rekapan.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
